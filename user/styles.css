@@ -1,0 +1,17 @@
+/*
+Colors:
+#25274D
+#464866
+#AAABB8
+#2E9CCA
+#29648A
+*/
+
+body {
+    background-color: #25274D;
+    height: 100%;
+}
+
+.header {
+    height: 80px;
+}

@@ -12,6 +12,62 @@ body {
     height: 100%;
 }
 
-.header {
-    height: 80px;
+
+.logo {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.alert {
+    border-radius: 0px;
+    margin-bottom: 0;
+    height: 40px;
+    text-align: center;
+}
+
+.main-body {
+    height: 1500px;
+    background-color: #f8f9fa;
+}
+
+.bits-col {
+    background-color: lightblue;
+
+}
+
+.wtf-col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.wtf-card {
+    max-width: 500px; 
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+
+.wtf-card-body {
+    padding: 0 0 0 8px;
+}
+
+.wtf-username {
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+.column-title {
+    font-size: 1.1em;
+    margin-top:10px;
+}
+
+.wtf-bio {
+    font-size: 0.8em;
+}
+
+.wtf-profile-pic {
+    width:100%; 
+    max-width: 200px; 
+    border-radius: .25rem;
 }

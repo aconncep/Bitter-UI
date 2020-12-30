@@ -46,10 +46,10 @@
                     </ul>
                     <ul class="navbar-nav d-flex">
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Admin</a>
+                            <button type="button" class="btn btn-danger" style="margin-right: 10px; margin-bottom: 2px;">Admin Panel</button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">New Bit</a>
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#NewBit">New Bit</button>
                           </li>
                     </ul>
                   </div>
@@ -67,7 +67,7 @@
                         <div class="card wtf-card">
                             <div class="row g-0">
                               <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="wtf-profile-pic">
+                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="wtf-profile-pic" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
                               </div>
                               <div class="col-md-7">
                                 <div class="card-body wtf-card-body">
@@ -76,7 +76,7 @@
                                 </div>
                               </div>
                               <div class="col-md-2  d-flex align-items-center justify-content-center">
-                                <button type="button" class="btn btn-outline-success wtf-follow-button">+</button>
+                                <button type="button" class="btn btn-outline-success">+</button>
                               </div>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                                 </div>
                               </div>
                               <div class="col-md-2  d-flex align-items-center justify-content-center"">
-                                <button type="button" class="btn btn-outline-success wtf-follow-button">+</button>
+                                <button type="button" class="btn btn-outline-success">+</button>
                               </div>
                             </div>
                         </div>
@@ -162,7 +162,7 @@
                                                 <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
                                             </div>
                                     </div>
-                                  <p class="card-text bit-text"><span class="bit-mentioned-user">@testuser2</span> This a bit that does not include an image but still includes a <span class="bit-hashtag">#mention</span> and even a hashtag.</p>
+                                  <p class="card-text bit-text"><span class="bit-mentioned-user">@testuser2</span> This a bit that does not include an image but still includes a mention and even a <span class="bit-hashtag">#hashtag</span>.</p>
 
                                     <p class="card-text bit-replies-rebits">3 replies, 0 rebits</p>
                                     <button type="button" class="btn btn-primary btn-sm">Reply</button>
@@ -225,7 +225,40 @@
 
 
         </div>
-        
+
+        <!-- Modal -->
+        <div class="modal fade" id="NewBit" tabindex="-1" aria-labelledby="NewBit" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="newBitTitle">New Bit</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form> 
+                        <div class="container-lg">
+                            <div class="row align-items-start">
+                            <div class="col-lg-2 d-flex align-items-center justify-content-center">
+                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="bit-profile-pic" style="margin-bottom: 10px;">
+                            </div>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" id="message-text" style="height: 100px"></textarea>
+                            </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="#" role="button">Attach Image</a>    
+                <button type="button" class="btn btn-primary">Post</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     </body>
 </html>

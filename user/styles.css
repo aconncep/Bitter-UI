@@ -38,9 +38,14 @@ body {
     height: 5px;
     width: 100%;
 }
+
 .bits-col {
+    background-color: #29648A;
+}
 
-
+.column-title {
+    font-size: 1.1em;
+    margin-top:10px;
 }
 
 .wtf-col {
@@ -58,16 +63,16 @@ body {
     padding: 0 0 0 8px;
 }
 
-.wtf-username {
+.wtf-display-name {
     margin-bottom: 0;
     font-size: 0.9em;
     padding-top:0.3em;
     padding-bottom:0.3em;
 }
 
-.column-title {
-    font-size: 1.1em;
-    margin-top:10px;
+
+.white-column-title {
+    color: white;
 }
 
 .wtf-bio {
@@ -97,6 +102,7 @@ body {
 .bit-username {
     margin-top: 0.3em;
     font-size: 0.9em;
+    margin-bottom: 4px;
 }
 
 .bit-pic {
@@ -136,6 +142,25 @@ body {
     color: #2E9CCA;
 }
 
-.bit-actions {
+.trending-tag {
+    color: #29648A;
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
 
+.trending-bit-count {
+    margin-top: -3px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+.bit-admin-badge {
+    margin-bottom: 4px;
+    max-width: 100px;
+}
+
+.bit-hashtag {
+    display: inline;
+    font-weight: bold;
+    color: #29648A;
 }

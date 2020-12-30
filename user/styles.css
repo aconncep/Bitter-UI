@@ -75,6 +75,10 @@ body {
     color: white;
 }
 
+.black-column-title {
+    color: black;
+}
+
 .wtf-bio {
     font-size: 0.8em;
 }
@@ -104,7 +108,7 @@ body {
 .bit-pic {
     height: 100%;
     width: 100%;
-    max-height: 205px;
+    max-height: 184px;
     object-fit: cover;
     padding: 10px;
     border-radius: 1rem;
@@ -174,4 +178,25 @@ body {
 .reply-actions {
     padding-top: 10px;
     float: right;
+}
+
+.profile-info {
+    padding-top: 10px;
+    background-color: #29648A;
+}
+
+.profile-pic {
+    border-radius: 0.25rem;
+    max-width: 150px;
+}
+
+.profile-card {
+    margin: 0 auto;
+    margin-bottom: 0.5em;
+}
+
+.profile-card-pic {
+    width:100%; 
+    max-width: 90px; 
+    border-radius: .25rem;
 }

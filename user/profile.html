@@ -65,16 +65,16 @@
               <div class="container-lg main-body">
                 <div class="row align-items-start">
                     <div class="xs-col-3 col-lg-3 order-2 order-lg-1 wtf-col">
-                        <h2 class="column-title">Who to follow</h2>
-                        <h3 style="font-size: 0.9em;">No suggestions at the moment</h3>
+                        <h2 class="column-title">Newest followers</h2>
+                        <h3 style="font-size: 0.9em;">No followers to show</h3>
                         <div class="card wtf-card">
                             <div class="row g-0">
                               <div class="col-md-3 d-flex align-items-center justify-content-center">
-                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="wtf-profile-pic" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="wtf-profile-pic">
                               </div>
                               <div class="col-md-7">
                                 <div class="card-body wtf-card-body">
-                                  <h5 class="card-title wtf-display-name">Austin Cepalia</h5>
+                                  <h5 class="card-title wtf-display-name" style="display:inline-block; padding-right: 5px; margin-top: 5px">Austin Cepalia</h5><span class="badge bg-danger bit-admin-badge" style="display: inline;">Admin</span>
                                   <p class="card-text wtf-bio">Blah blah blah blah blah blah blah blah</p>
                                 </div>
                               </div>
@@ -91,8 +91,8 @@
                               </div>
                               <div class="col-md-7">
                                 <div class="card-body wtf-card-body">
-                                  <h5 class="card-title wtf-display-name">Austin Cepalia</h5>
-                                  <p class="card-text wtf-bio">Blah blah blah blah blah blah blah blah</p>
+                                    <h5 class="card-title wtf-display-name" style="display:inline-block; padding-right: 5px; margin-top: 5px">Austin Cepalia</h5><span class="badge bg-danger bit-admin-badge" style="display: inline;">Admin</span>
+                                    <p class="card-text wtf-bio">Blah blah blah blah blah blah blah blah</p>
                                 </div>
                               </div>
                               <div class="col-md-2  d-flex align-items-center justify-content-center"">
@@ -102,53 +102,41 @@
                         </div>
 
                     </div>
-                    <div class="xs-col-7 col-lg-7 order-1 order-lg-2 bits-col">
-                        <h2 class="column-title white-column-title">Replying to</h2>
-                        <div class="card bit-card bit-replying">
-                            <div class="row g-0">
-                              <div class="col-md-2 d-flex align-items-center justify-content-center">
-                                <div class="card-body" style="padding-bottom: 0px;">
-                                    <div class="img-container">
-                                        <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="bit-profile-pic">
-                                    </div>
- 
-                                    <h5 class="bit-username">@aconncep</h5>
-                                    <span class="badge bg-danger d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <div class="card-body" style="padding-top: 10px; padding-bottom: 3px;">
-                                    <div class="row g-0">
-                                            <div class="col-md-5" style="max-width: 130px;">
-                                                <h5 class="card-title bit-title">Austin Cepalia</h5>
-                                            </div>
-                                            <div class="col-md-7" style="margin-top: -2px!important;">
-                                                <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
-                                            </div>
-                                    </div>
-                                    
-                                  <p class="card-text bit-text">If a the loaded bit is replying to another bit, that bit will appear here.</p>
-
-                            
-                                </div>
-                              </div>
-                              <div class="col-md-4">
-                                <img src="https://pbs.twimg.com/media/EqNBV04XYAIVUyM?format=jpg&name=large" alt="..." class="bit-pic" data-bs-toggle="modal" data-bs-target="#ViewBitImage">
-                              </div>
+                    <div class="xs-col-7 col-lg-7 order-1 order-lg-2">
+                        
+                        <div class="profile-info">
+                            <div class="row g-0 d-flex align-items-center justify-content-center">
+                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="profile-pic" data-bs-toggle="modal" data-bs-target="#ViewProfileImage">
                             </div>
-                            <div class="row g-0">
-                                <div class="col-md-12">
-                                    <div class="btn-group d-flex" role="group" aria-label="...">
-                                        <button type="button" class="btn btn-primary btn-sm">Reply (3)</button>
-                                        <button type="button" class="btn btn-secondary btn-sm disabled">Rebit (0)</button>
-                                        <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">Delete</button>
-                                    </div>
-                                </div>
-                              </div>
-                          </div>
+                            <div class="row g-0" style="text-align: center; margin-top: 10px; color: white;">
+                                <h3>Austin Cepalia</h3>
+                            </div>
+                            <div class="row g-0" style="text-align: center; margin-top: -5px; color: white;">
+                                <h5>@aconncep</h5>
+                                
+                            </div>
+                            <div class="row g-0 d-flex align-items-center justify-content-center">
+                                <span class="badge bg-danger bit-admin-badge">Admin</span>
+                            </div>
+                            <div class="row g-0" style="text-align: center; margin-top: 0px; color: white; max-width: 500px; margin: 0 auto;">
+                                <p>Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah</p>
+                            </div>
+                            <div class="btn-group d-flex" role="group" aria-label="...">
+                                <button type="button" class="btn btn-dark">542 Bits</button>
+                                <button type="button" class="btn btn-secondary">3 Images</button>
+                                <button type="button" class="btn btn-dark">337 Followers</button>
+                                <button type="button" class="btn btn-secondary">21 Following</button>
+                            </div>
+                        </div>
+                        
 
-                          <h2 class="column-title white-column-title">@aconncep's Bit</h2>
+
+
+
+                                             
+
+                          <h2 class="column-title black-column-title">@aconncep's Bits</h2>
+
 
                           <div class="card bit-card">
                             <div class="row g-0">
@@ -172,8 +160,7 @@
                                                 <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
                                             </div>
                                     </div>
-                                  <p class="card-text bit-text">This is the loaded <span class="bit-hashtag">#bit</span>.</p>
-
+                                  <p class="card-text bit-text">This is a normal bit on a profile page.</p>
                                 </div>
                               </div>
                             </div>
@@ -187,32 +174,57 @@
                                     </div>
                                 </div>
                               </div>
-                            
                           </div>
 
-                          <h2 class="column-title white-column-title">Your Reply</h2>
-                          <form> 
-                            <div class="container-sm" style="padding-left: 12px; padding-right: 0px;">
-                                <div class="row align-items-start">
-                                <div class="col-sm-2 d-flex align-items-center justify-content-center" style="padding: 0px">
-                                    <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="bit-profile-pic" style="margin-bottom: 10px;">
-                                </div>
-                                <div class="col-sm-10">
-                                    <textarea class="form-control" id="message-text" style="height: 100px"></textarea>
-                                    <div class="reply-actions">
-                                        <button type="button" class="btn btn-secondary btn-sm">Cancel</button>
-                                        <button type="button" class="btn btn-primary btn-sm">Reply</button>
+                          <h2 class="column-title black-column-title">@aconncep's Bits with Images</h2>
+
+                          <div class="card bit-card">
+                            <div class="row g-0">
+                              <div class="col-md-2 d-flex align-items-center justify-content-center">
+                                <div class="card-body" style="padding-bottom: 0px;">
+                                    <div class="img-container">
+                                        <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="bit-profile-pic">
                                     </div>
+ 
+                                    <h5 class="bit-username">@aconncep</h5>
+                                    <span class="badge bg-danger d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="card-body" style="padding-top: 10px; padding-bottom: 3px;">
+                                    <div class="row g-0">
+                                            <div class="col-md-5" style="max-width: 130px;">
+                                                <h5 class="card-title bit-title">Austin Cepalia</h5>
+                                            </div>
+                                            <div class="col-md-7" style="margin-top: -2px!important;">
+                                                <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
+                                            </div>
+                                    </div>
+                                    
+                                  <p class="card-text bit-text">This bit has an image attached.</p>
 
+                            
                                 </div>
-                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <img src="https://pbs.twimg.com/media/EqNBV04XYAIVUyM?format=jpg&name=large" alt="..." class="bit-pic" data-bs-toggle="modal" data-bs-target="#ViewBitImage">
+                              </div>
                             </div>
-                        </form>
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="btn-group d-flex" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-primary btn-sm">Reply (3)</button>
+                                        <button type="button" class="btn btn-secondary btn-sm disabled">Rebit (0)</button>
+                                        <button type="button" class="btn btn-info btn-sm">Stats</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">Delete</button>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
 
-                          <h2 class="column-title white-column-title">All Replies</h2>
+                          <h2 class="column-title black-column-title">Bits that Mention @aconncep</h2>
 
-
-                          <div class="card bit-card bit-replying">
+                          <div class="card bit-card">
                             <div class="row g-0">
                               <div class="col-md-2 d-flex align-items-center justify-content-center">
                                 <div class="card-body" style="padding-bottom: 0px;">
@@ -234,7 +246,9 @@
                                                 <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
                                             </div>
                                     </div>
-                                  <p class="card-text bit-text">This is a reply to the loaded bit. If the user replies using the form above, that bit will show up here.</p>
+                                    
+                                  <p class="card-text bit-text">This bit mentions <span class="bit-mentioned-user">@aconncep</span>.</p>
+                            
                                 </div>
                               </div>
                             </div>
@@ -249,11 +263,54 @@
                                 </div>
                               </div>
                           </div>
+
+
+                          <h2 class="column-title black-column-title">@aconncep's Followers</h2>
+
+                          <div class="card profile-card">
+                            <div class="row g-0">
+                              <div class="col-md-2">
+                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="profile-card-pic" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body wtf-card-body">
+                                    <h5 class="card-title wtf-display-name" style="display:inline-block; padding-right: 5px; margin-top: 10px;">Austin Cepalia</h5><span class="badge bg-danger bit-admin-badge" style="display: inline;">Admin</span>
+                                    <p class="card-text wtf-bio">Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah</p>
+                                </div>
+                              </div>
+                              <div class="col-md-2  d-flex align-items-center justify-content-center">
+                                <button type="button" class="btn btn-outline-success">+</button>
+                              </div>
+                            </div>
+                        </div>
+
+                        <h2 class="column-title black-column-title">Users @aconncep Follows</h2>
+
+                          <div class="card profile-card">
+                            <div class="row g-0">
+                              <div class="col-md-2">
+                                <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="profile-card-pic" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body wtf-card-body">
+                                    <h5 class="card-title wtf-display-name" style="display:inline-block; padding-right: 5px; margin-top: 10px;">Austin Cepalia</h5><span class="badge bg-danger bit-admin-badge" style="display: inline;">Admin</span>
+                                  <p class="card-text wtf-bio">Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah Blah blah blah blah blah blah blah blah</p>
+                                </div>
+                              </div>
+                              <div class="col-md-2  d-flex align-items-center justify-content-center">
+                                <button type="button" class="btn btn-outline-success">+</button>
+                              </div>
+                            </div>
+                        </div>
+
+
+
+
                           
                     </div>
                     <div class="xs-col-2 col-lg-2 order-last">
-                        <h2 class="column-title">Trending</h2>
-                        <h3 style="font-size: 0.9em;">No tags are trending at the moment</h3>
+                        <h2 class="column-title">Most used hashtags</h2>
+                        <h3 style="font-size: 0.9em;">You haven't used any hashtags yet.</h3>
                         <p class="trending-tag">#Bitter</p>
                         <p class="trending-bit-count">50 bits</p>
                         <p class="trending-tag">#ILoveBitter</p>
@@ -263,6 +320,10 @@
                     </div>
                   </div>
               </div>
+
+              
+
+              
 
 
         </div>
@@ -351,6 +412,25 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="ViewProfileImage" tabindex="-1" aria-labelledby="ViewProfileImage" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewProfileImageTitle">{display name}'s Profile Picture</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://pbs.twimg.com/profile_images/1337192497114722306/NfIqhmq7_400x400.jpg" alt="..." class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             </div>

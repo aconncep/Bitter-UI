@@ -14,7 +14,10 @@
         <div class="container-lg">
             <div class="alert alert-success  d-flex align-items-center justify-content-center" role="alert">
                 Bit posted successfully.
-              </div>
+            </div>
+            <div class="alert alert-danger  d-flex align-items-center justify-content-center" role="alert">
+                Something went wrong.
+            </div>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -36,8 +39,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item" href="#">Profile</a></li>
-                          <li><a class="dropdown-item" href="#">Followers</a></li>
-                          <li><a class="dropdown-item" href="#">Following</a></li>
+                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#FindUser">Find User</a></li>
                           <li><a class="dropdown-item" href="#">Account Settings</a></li>
                           <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Logout</a></li>
@@ -49,7 +51,7 @@
                             <button type="button" class="btn btn-danger" style="margin-right: 10px; margin-bottom: 2px;">Admin Panel</button>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#NewBit">New Bit</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NewBit">New Bit</button>
                           </li>
                     </ul>
                   </div>
@@ -63,7 +65,7 @@
                 <div class="row align-items-start">
                     <div class="xs-col-3 col-lg-3 order-2 order-lg-1 wtf-col">
                         <h2 class="column-title">Who to follow</h2>
-                        
+                        <h3 style="font-size: 0.9em;">No suggestions at the moment</h3>
                         <div class="card wtf-card">
                             <div class="row g-0">
                               <div class="col-md-3 d-flex align-items-center justify-content-center">
@@ -101,7 +103,7 @@
                     </div>
                     <div class="xs-col-7 col-lg-7 order-1 order-lg-2 bits-col">
                         <h2 class="column-title white-column-title">Recent Bits</h2>
-                        
+                        <h3 style="font-size: 0.9em; color: white;">Hmmmm...things are pretty quiet right now.</h3>
                         <div class="card bit-card">
                             <div class="row g-0">
                               <div class="col-md-2 d-flex align-items-center justify-content-center">
@@ -111,7 +113,7 @@
                                     </div>
  
                                     <h5 class="bit-username">@aconncep</h5>
-                                    <span class="badge bg-primary d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
+                                    <span class="badge bg-danger d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
                                 </div>
                               </div>
                               <div class="col-md-6">
@@ -124,12 +126,10 @@
                                                 <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
                                             </div>
                                     </div>
-                                  <p class="card-text bit-text"><span class="bit-mentioned-user">@testuser1</span> This a bit that includes an image. When an image is attached, it appears on the right.</p>
-                                    <p class="card-text bit-replies-rebits">3 replies, 0 rebits</p>
-                                    <button type="button" class="btn btn-primary btn-sm">Reply</button>
-                                    <button type="button" class="btn btn-secondary btn-sm disabled">Rebit</button>
-                                    <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">X</button>
+                                    
+                                  <p class="card-text bit-text"><span class="bit-mentioned-user">@testuser1</span> This is a bit that includes an image. When an image is attached, it appears on the right.</p>
+
+                                  
 
 
                                 </div>
@@ -138,6 +138,16 @@
                                 <img src="https://pbs.twimg.com/media/EqNBV04XYAIVUyM?format=jpg&name=large" alt="..." class="bit-pic" data-bs-toggle="modal" data-bs-target="#ViewBitImage">
                               </div>
                             </div>
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="btn-group d-flex" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-primary btn-sm">Reply (3)</button>
+                                        <button type="button" class="btn btn-secondary btn-sm disabled">Rebit (0)</button>
+                                        <button type="button" class="btn btn-info btn-sm">Stats</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">Delete</button>
+                                    </div>
+                                </div>
+                              </div>
                           </div>
 
                           <div class="card bit-card">
@@ -149,7 +159,7 @@
                                     </div>
  
                                     <h5 class="bit-username">@aconncep</h5>
-                                    <span class="badge bg-primary d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
+                                    <span class="badge bg-danger d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
                                 </div>
                               </div>
                               <div class="col-md-10">
@@ -162,18 +172,22 @@
                                                 <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
                                             </div>
                                     </div>
-                                  <p class="card-text bit-text"><span class="bit-mentioned-user">@testuser2</span> This a bit that does not include an image but still includes a mention and even a <span class="bit-hashtag">#hashtag</span>.</p>
-
-                                    <p class="card-text bit-replies-rebits">3 replies, 0 rebits</p>
-                                    <button type="button" class="btn btn-primary btn-sm">Reply</button>
-                                    <button type="button" class="btn btn-secondary btn-sm">Rebit</button>
-                                    <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">X</button>
-
+                                  <p class="card-text bit-text"><span class="bit-mentioned-user">@testuser2</span> This is a bit that does not include an image but still includes a mention and even a <span class="bit-hashtag">#hashtag</span>.</p>
 
                                 </div>
                               </div>
                             </div>
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="btn-group d-flex" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-primary btn-sm">Reply (3)</button>
+                                        <button type="button" class="btn btn-secondary btn-sm disabled">Rebit (0)</button>
+                                        <button type="button" class="btn btn-info btn-sm">Stats</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">Delete</button>
+                                    </div>
+                                </div>
+                              </div>
+                            
                           </div>
 
 
@@ -186,7 +200,7 @@
                                     </div>
  
                                     <h5 class="bit-username">@aconncep</h5>
-                                    <span class="badge bg-primary d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
+                                    <span class="badge bg-danger d-flex align-items-center justify-content-center bit-admin-badge">Admin</span>
                                 </div>
                               </div>
                               <div class="col-md-10">
@@ -199,20 +213,26 @@
                                                 <p class="card-text"><small class="text-muted bit-date">12/29/2020 7:23pm</small></p>
                                             </div>
                                     </div>
-                                  <p class="card-text bit-text">This a bit that does not include an image or a mention. It's the most basic type of bit.</p>
-                                  <p class="card-text bit-replies-rebits">3 replies, 0 rebits</p>
-                                  <button type="button" class="btn btn-primary btn-sm">Reply</button>
-                                  <button type="button" class="btn btn-secondary btn-sm disabled">Rebit</button>
-                                  <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">X</button>
+                                  <p class="card-text bit-text">This is a bit that does not include an image or a mention. It's the most basic type of bit.</p>
                                 </div>
                               </div>
                             </div>
+                            <div class="row g-0">
+                                <div class="col-md-12">
+                                    <div class="btn-group d-flex" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-primary btn-sm">Reply (3)</button>
+                                        <button type="button" class="btn btn-secondary btn-sm disabled">Rebit (0)</button>
+                                        <button type="button" class="btn btn-info btn-sm">Stats</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">Delete</button>
+                                    </div>
+                                </div>
+                              </div>
                           </div>
                           
                     </div>
                     <div class="xs-col-2 col-lg-2 order-last">
                         <h2 class="column-title">Trending</h2>
+                        <h3 style="font-size: 0.9em;">No tags are trending at the moment</h3>
                         <p class="trending-tag">#Bitter</p>
                         <p class="trending-bit-count">50 bits</p>
                         <p class="trending-tag">#ILoveBitter</p>
@@ -250,7 +270,7 @@
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="#" role="button">Attach Image</a>    
+                <a class="btn btn-success" href="#" role="button">Attach Image</a>    
                 <button type="button" class="btn btn-primary">Post</button>
                 </div>
             </div>
@@ -285,6 +305,30 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="FindUser" tabindex="-1" aria-labelledby="FindUser" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="findUserTitle">Find User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Enter a username to search (name must be exact):</label>
+                          <textarea class="form-control" id="message-text" style="height: 10px;"></textarea>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Search</button>
                 </div>
             </div>
             </div>

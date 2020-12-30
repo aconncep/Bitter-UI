@@ -166,3 +166,12 @@ body {
     position: absolute;
     bottom: 10px;
 }
+
+.bit-replying {
+    background-color: #EAEAEA;
+}
+
+.reply-actions {
+    padding-top: 10px;
+    float: right;
+}

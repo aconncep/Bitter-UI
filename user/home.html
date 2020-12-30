@@ -129,7 +129,7 @@
                                     <button type="button" class="btn btn-primary btn-sm">Reply</button>
                                     <button type="button" class="btn btn-secondary btn-sm disabled">Rebit</button>
                                     <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">X</button>
 
 
                                 </div>
@@ -168,7 +168,7 @@
                                     <button type="button" class="btn btn-primary btn-sm">Reply</button>
                                     <button type="button" class="btn btn-secondary btn-sm">Rebit</button>
                                     <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                    <button type="button" class="btn btn-danger btn-sm">X</button>
+                                    <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">X</button>
 
 
                                 </div>
@@ -204,7 +204,7 @@
                                   <button type="button" class="btn btn-primary btn-sm">Reply</button>
                                   <button type="button" class="btn btn-secondary btn-sm disabled">Rebit</button>
                                   <button type="button" class="btn btn-info btn-sm">Stats</button>
-                                  <button type="button" class="btn btn-danger btn-sm">X</button>
+                                  <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">X</button>
                                 </div>
                               </div>
                             </div>
@@ -252,6 +252,21 @@
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 <a class="btn btn-primary" href="#" role="button">Attach Image</a>    
                 <button type="button" class="btn btn-primary">Post</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="DeleteBitConfirmation" tabindex="-1" aria-labelledby="DeleteBitConfirmation" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteBitTitle">Are you sure you want to delete this bit?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actually no</button>
+                    <button type="button" class="btn btn-primary">Nuke it!</button>
                 </div>
             </div>
             </div>

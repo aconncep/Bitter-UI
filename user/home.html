@@ -135,7 +135,7 @@
                                 </div>
                               </div>
                               <div class="col-md-4">
-                                <img src="https://pbs.twimg.com/media/EqNBV04XYAIVUyM?format=jpg&name=large" alt="..." class="bit-pic">
+                                <img src="https://pbs.twimg.com/media/EqNBV04XYAIVUyM?format=jpg&name=large" alt="..." class="bit-pic" data-bs-toggle="modal" data-bs-target="#ViewBitImage">
                               </div>
                             </div>
                           </div>
@@ -267,6 +267,24 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Actually no</button>
                     <button type="button" class="btn btn-primary">Nuke it!</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ViewBitImage" tabindex="-1" aria-labelledby="ViewBitImage" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewBitImageTitle">{display name}'s Bit Image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://pbs.twimg.com/media/EqNBV04XYAIVUyM?format=jpg&name=large" alt="..." class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
             </div>

@@ -150,7 +150,7 @@
                                             More
                                           </button>
                                           <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                            <a class="dropdown-item" href="#">Stats</a>
+                                            <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#BitStats">Stats</a>
                                             <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#DeleteBitConfirmation">Delete</a>
                                           </div>
                                         </div>
@@ -288,7 +288,12 @@
                                 That username is already taken
                             </div>
                           <label for="text" class="col-form-label">Username:</label>
-                          <input type="text" class="form-control" id="text">
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="text">
+                          </div>
                         </div>
                         <div class="mb-3">
                           <label for="password" class="col-form-label">Password:</label>
@@ -304,11 +309,66 @@
                         </div>
                       </form>
                       <input id="fileInput" type="file" style="display:none;" />
-                      <a class="btn btn-success" href="#" role="button" onclick="document.getElementById('fileInput').click();">Upload new profile picture</a>  
+                      <a class="btn btn-success" href="#" role="button" onclick="document.getElementById('fileInput').click();">Upload new profile picture</a>
+                      <a role="button" class="btn btn-danger" href="#">Disable Account</a>  
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                 <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="BitStats" tabindex="-1" aria-labelledby="BitStats" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="BitStatsLabel">Bit Statistics</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Engagements</h6><h5>100</h5>
+                    <h6>Replies</h6><h5>50</h5>
+                    <h6>Rebits</h6><h5>23</h5>
+                    <h6>Bit Number (me)</h6><h5>1</h5>
+                    <h6>Bit Number (Globally)</h6><h5>3134</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="DisableAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="DisableAccount" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="DisableAccountLabel">Disable Account?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <div class="alert alert-danger d-flex align-items-center justify-content-center" role="alert">
+                                Incorrect username
+                            </div>
+                            <h6 style="font-size: 1em; margin-top: 10px;">Are you sure you want to disable your account? This will hide your public profile and bits. All of your account data will be saved, 
+                                and you can re-enable your account at any time by logging in with your current username and password.<br><br>To proceed, enter your username and select 'Disable'</h6>
+                            <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                              </div>
+                              <input type="text" class="form-control" id="text">
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Never mind</button>
+                <button type="submit" class="btn btn-danger">Disable</button>
                 </div>
             </div>
             </div>
